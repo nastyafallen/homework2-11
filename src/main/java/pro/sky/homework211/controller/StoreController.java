@@ -11,7 +11,7 @@ import pro.sky.homework211.service.StoreService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/store/order")
+@RequestMapping("/order")
 public class StoreController {
     private final StoreService storeService;
 
