@@ -1,0 +1,7 @@
+http://localhost:8080/store/order/add?item=23,29,101
+###
+http://localhost:8080/store/order/get
+###
+http://localhost:8080/store/order/add?item=99
+###
+http://localhost:8080/store/order/get
