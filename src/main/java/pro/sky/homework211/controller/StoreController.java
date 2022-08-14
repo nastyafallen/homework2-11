@@ -20,7 +20,7 @@ public class StoreController {
     }
 
     @GetMapping(value = "/add")
-    public void add(@RequestParam("id") int id) {
+    public void add(@RequestParam("item") List<Integer> id) {
         storeService.add(id);
     }
 

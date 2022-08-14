@@ -1,26 +1,22 @@
 package pro.sky.homework211;
 
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.SessionScope;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
+@SessionScope
 public class Basket {
     private final List<Integer> basketList;
-    private static int counter;
 
     public Basket() {
         this.basketList = new ArrayList<>();
-        counter = 0;
     }
 
     public List<Integer> getBasketList() {
         return basketList;
     }
 
-    public static int getCounter() {
-        return counter;
-    }
-
-    public static void setCounter(int counter) {
-        Basket.counter = counter;
-    }
 }
